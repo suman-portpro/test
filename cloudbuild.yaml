@@ -5,7 +5,7 @@ steps:
     args:
       - "-c"
       - |
-         gcloud compute ssh --zone us-east4-c suman_username@cloudbuild-automation-dev -- whoami;/bin/bash /home/suman_gautam/run.sh;echo "cool"
+         echo deployer | ssh deployer@34.86.172.147 /home/suman_gautam/run.sh
 
 options:
     logging: CLOUD_LOGGING_ONLY
