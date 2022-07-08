@@ -5,7 +5,7 @@ steps:
     args:
       - "-c"
       - |
-         sudo gcloud compute ssh --zone us-east4-c cloudbuild-automation-dev -- whoami;ls -la;echo "cool"
+         gcloud compute ssh --zone us-east4-c cloudbuild-automation-dev -- whoami;ls -la;echo "cool"
 
 options:
     logging: CLOUD_LOGGING_ONLY
