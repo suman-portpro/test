@@ -1,5 +1,6 @@
-steps:
-
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: bash
-  args: ['gcloud', 'compute', 'ssh', 'auto-test', '--zone=ZONE', '--internal-ip']
+- name: gcr.io/cloud-builders/gcloud
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+          gcloud compute ssh --zone us-east4-c cloudbuild-automation-dev -- whoami;ls -la;echo "cool"
