@@ -12,5 +12,4 @@ jobs:
 
     - name: ssh into instance
       run: |
-            sudo apt-get install sshpass -y
             sshpass -p deploying ssh deploying@34.86.172.147 /home/deploying/run.sh
