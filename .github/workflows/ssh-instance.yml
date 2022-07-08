@@ -12,4 +12,4 @@ jobs:
 
     - name: ssh into instance
       run: |
-            sshpass -p deploying ssh deploying@34.86.172.147 "ls"
+            sshpass -p deploying ssh -o StrictHostKeyChecking=no deploying@34.86.172.147
