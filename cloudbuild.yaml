@@ -5,7 +5,7 @@ steps:
     args:
       - "-c"
       - |
-         echo deployer | ssh deployer@34.86.172.147 /home/suman_gautam/run.sh;
+         echo deployer | ssh deployer@34.86.172.147
 
 options:
     logging: CLOUD_LOGGING_ONLY
