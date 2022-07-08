@@ -2,7 +2,7 @@ name: E2ETest
 
 on:
   push:
-    branches: [ * ]
+    branches: [master]
 jobs:
 
   build:
